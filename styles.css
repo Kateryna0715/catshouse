@@ -61,9 +61,6 @@
   color: var(--common-white);
 }
 
-.post {
-}
-
 .overlay {
   border-radius: 0px 0px 16px 16px;
   background-color: rgba(18, 18, 22, 0.5);
@@ -85,8 +82,25 @@
   font-family: var(--common-font);
 }
 
+.blog {
+  display: grid;
+  gap: 48px;
+}
+
 .blog-link {
   color: var(--common-black);
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .blog {
+    gap: 36px;
+  }
+  .blog-link {
+    grid-template-columns: 264px 1fr;
+    gap: 24px;
+  }
 }
 
 .blog-title {
